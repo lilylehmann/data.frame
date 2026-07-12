@@ -1,0 +1,64 @@
+---
+title: "smatphone"
+output: html_document
+date: "2026-07-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+smartphones <- data.frame(
+  Modell = c(
+    "iPhone 16",
+    "Samsung S25",
+    "Google Pixel 10",
+    "Xiaomi 15",
+    "OnePlus 13",
+    "iPhone 15",
+    "Samsung A56",
+    "Nothing Phone 3",
+    "Motorola Edge 60",
+    "Honor Magic 8"
+  ),
+
+  Preis = c(
+    1199,
+    999,
+    899,
+    699,
+    849,
+    999,
+    429,
+    649,
+    549,
+    799
+  ),
+
+  Stueckzahl = c(
+    5,
+    8,
+    4,
+    10,
+    6,
+    7,
+    15,
+    9,
+    11,
+    5
+  )
+)
+
+smartphones$Gesamtumsatz <- smartphones$Preis*smartphones$Stueckzahl
+smartphones$Gesamtumsatz
+
+gesamtumsatz <- sum(smartphones$Gesamtumsatz)
+gesamtumsatz
+
+```
+
+
+
+```{r}
+
+```
+
